@@ -118,9 +118,11 @@ kadm5_init_with_password('auth.seg4linux', 'TREINO.ORG', 'admin/admin', 'senhase
 kadm5_destroy($conexao);
 ```
 
-- OTP - Autenticação por token
+### Autenticação
+
+- [OTP](https://pt.wikipedia.org/wiki/Senha_descart%C3%A1vel) - Autenticação por token
 - Duplo fator - Dois tipos de autenticação
-- Biométrica - Autenticação pela digital
-- OpenID - Cadastro de usuários compartilhados entre sites
-- Oauth - Mesmo que OpenID, mas com a utilização de token
-- SAML - Autenticação compartilhada utilizando tickets
+- [Biométrica](https://pt.wikipedia.org/wiki/Biometria) - Autenticação pela digital
+- [OpenID](https://pt.wikipedia.org/wiki/OpenID) - Cadastro de usuários compartilhados entre sites
+- [Oauth](https://pt.wikipedia.org/wiki/OAuth) - Mesmo que OpenID, mas com a utilização de token
+- [SAML](https://en.wikipedia.org/wiki/SAML_2.0) - Autenticação compartilhada utilizando tickets
