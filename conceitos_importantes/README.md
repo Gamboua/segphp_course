@@ -66,11 +66,11 @@ Content-Type: text/html
 - Raibow tables
 
 ### Criptografia e hash no PHP
-- [base64](https://www.google.com)
-- [md5](https://www.google.com)
-- [sha1](https://www.google.com)
-- [openssl](https://www.google.com)
-- [sodium](https://www.google.com)
+- [base64](base64.php)
+- [md5](md5.php)
+- [sha1](sha1.php)
+- [openssl](openssl.php)
+- [sodium](sodium.php)
 
 ### Autorização x Autenticação
 
@@ -79,7 +79,7 @@ Content-Type: text/html
 - Blacklists
 
 ### Autenticação
-- SGBD
+- [SGBD](SGBD.php)
 ```php
 $pdo = new PDO('mysql:host=hostname;dbname=dbname', 'usuario', 'senha');
 
@@ -93,7 +93,7 @@ $rows = $stm->fetch(\PDO::FETCH_ASSOC);
 
 ```
 
-- LDAP
+- [LDAP](LDAP.php)
 ```php
 ldap_connect("ldaps://auth.seg4linux.com.br/", 636);
 
@@ -111,7 +111,7 @@ ldap_close($conexao);
 
 ```
 
-- Kerberos
+- [Kerberos](kerberos.php)
 ```php
 kadm5_init_with_password('auth.seg4linux', 'TREINO.ORG', 'admin/admin', 'senhasecreta');
 
