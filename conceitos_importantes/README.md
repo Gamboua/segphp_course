@@ -118,7 +118,7 @@ kadm5_init_with_password('auth.seg4linux', 'TREINO.ORG', 'admin/admin', 'senhase
 kadm5_destroy($conexao);
 ```
 
-### Autenticação
+### Outros tipos de autenticação
 
 - [OTP](https://pt.wikipedia.org/wiki/Senha_descart%C3%A1vel) - Autenticação por token
 - Duplo fator - Dois tipos de autenticação
