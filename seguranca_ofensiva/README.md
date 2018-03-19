@@ -4,7 +4,7 @@
 - Blackhats x Whitehats
 - Mercado de segurança da informação
 
-### XSS
+### [XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
 - Refletido:
 ```php
 # http://localhost/xss.php?mensagem=<script>alert('XSS');</script>
