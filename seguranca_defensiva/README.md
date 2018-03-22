@@ -150,6 +150,7 @@ $user_data = unserialize($_GET['data']);
 - Utilize password_hash
 - Define alguma politica de senha
 - Restrinja o número máximo de tentativas
+:wq
 
 ### Ambiente
 - Mantenha ambiente atualizado
