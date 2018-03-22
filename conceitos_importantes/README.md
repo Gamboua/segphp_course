@@ -39,7 +39,7 @@ Connection: Keep-Alive
 Content-Type: text/html
 ```
 
-### Métodos
+### [Métodos](https://www.iana.org/assignments/http-methods/http-methods.xhtml)
 - GET
 - POST
 - PUT
@@ -48,9 +48,9 @@ Content-Type: text/html
 - TRACE
 - OPTIONS
 
-### RESTfull
+### [RESTfull](https://pt.wikipedia.org/wiki/REST)
 
-### Status da requisição
+### [Status da requisição](https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP)
 - 1xx - Códigos informativos
 - 2xx - Operações realizadas com sucesso
 - 3xx - Redirecionamento
@@ -63,12 +63,30 @@ Content-Type: text/html
 - Simétrica
 - Assimétrica
 - Criptografia x Hash
-- Raibow tables
+- [Raibow tables](https://pt.wikipedia.org/wiki/Rainbow_table)
 
 ### Criptografia e hash no PHP
 - [base64](criptografia_hash_files/base64.php)
+```php
+$string = '123456';
+base64_encode($string);
+# MTIzNDU2
+base64_decode($codificada);
+# 123456
+
+```
+
 - [md5](criptografia_hash_files/md5.php)
+```php
+md5(123456);
+# e10adc3949ba59abbe56e057f20f883e
+```
+
 - [sha1](criptografia_hash_files/sha1.php)
+```php
+sha1(123456)
+# 7c4a8d09ca3762af61e59520943dc26494f8941b
+```
 - [openssl](criptografia_hash_files/openssl.php)
 - [sodium](criptografia_hash_files/sodium.php)
 

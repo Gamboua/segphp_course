@@ -29,7 +29,6 @@ echo isset($_SESSION['variavel']) ? $_GET['variavel'] : "" ;
 
 - XSHM - Cross-Site History Manipulation
 ```php
-<?php
 /*
 http://vitima.segphp4linux/xss_xshm.php?mensagem=<script>alert(history.length);</script>
 */
