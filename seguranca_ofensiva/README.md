@@ -1,7 +1,8 @@
 # Segurança ofensiva
 
 ### Introdução
-- Blackhats x Whitehats
+- Grayhats x Whitehats
+- Script Kiddies
 - Mercado de segurança da informação
 
 ### [XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
