@@ -4,6 +4,8 @@
 # senha=' or '1'='1
 
 if ($_POST) {
+    $user = $_POST['login'];
+    $pass = $_POST['passwd'];
     $query = "SELECT * FROM usuarios WHERE user='$user' AND pass='$pass' ";
 
     echo $query;
@@ -27,6 +29,7 @@ if ($_POST) {
                 <td>Senha: <input type="password" name="passwd" /> </td>
             </tr>
         </table>
+        <button type="submit">Logar</button>
     </form>
 </body>
 </html>
