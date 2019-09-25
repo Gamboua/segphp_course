@@ -1,11 +1,15 @@
 <?php
 
+session_start();
+
 if ($_POST) {
     $user = 'admin';
     $passwd = 'admin';
 
     if ($_GET['login'] == $user && $_GET['passwd'] == $passwd) {
+        $_SESSION['logado'] = true;
         header('Location: csrf_vitima.php');
+        exit;
     } else {
         echo 'Usuario e senha nao coincidem';
     }
@@ -29,6 +33,7 @@ if ($_POST) {
                 <td>Senha: <input type="password" name="passwd" /> </td>
             </tr>
         </table>
+        <button type="submit">Acessar<button>
     </form>
 </body>
 </html>

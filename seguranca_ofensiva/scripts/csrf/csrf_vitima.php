@@ -4,6 +4,7 @@ session_start();
 
 if (!isset($_SESSION['logado'])) {
     header('Location: csrf_vitima_login.php');
+    exit;
 }
 
 ?>
@@ -24,10 +25,10 @@ if (!isset($_SESSION['logado'])) {
             ?>
 
                     <tr>
-                        <td><?= $i ?></td>
-                        <td>Fulano<?= $i ?></td>
-                        <td>fulano<?= $i ?>@fulano.com.br</td>
-                        <td><a href="csrf_vitima_del.php?id=<?= $i ?>">X</a></td>
+                        <td><?php echo $i ?></td>
+                        <td>Fulano<?php echo $i ?></td>
+                        <td>fulano<?php echo $i ?>@fulano.com.br</td>
+                        <td><a href="csrf_vitima_del.php?id=<?php echo $i ?>">X</a></td>
                     </tr>
 
             <?php
