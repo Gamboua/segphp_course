@@ -4,6 +4,7 @@ session_start();
 
 if (!isset($_SESSION['logado'])) {
     header('Location: csrf_vitima_login.php');
+    exit;
 }
 
 ?>
