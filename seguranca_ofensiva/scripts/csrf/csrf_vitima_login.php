@@ -29,6 +29,7 @@ if ($_POST) {
                 <td>Senha: <input type="password" name="passwd" /> </td>
             </tr>
         </table>
+        <button type="submit">Acessar<button>
     </form>
 </body>
 </html>
