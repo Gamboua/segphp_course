@@ -5,7 +5,9 @@ if ($_POST) {
     $passwd = 'admin';
 
     if ($_GET['login'] == $user && $_GET['passwd'] == $passwd) {
+        $_SESSION['logado'] = true;
         header('Location: csrf_vitima.php');
+        exit;
     } else {
         echo 'Usuario e senha nao coincidem';
     }
