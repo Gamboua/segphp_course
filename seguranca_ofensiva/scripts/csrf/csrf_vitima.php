@@ -25,10 +25,10 @@ if (!isset($_SESSION['logado'])) {
             ?>
 
                     <tr>
-                        <td><?= $i ?></td>
-                        <td>Fulano<?= $i ?></td>
-                        <td>fulano<?= $i ?>@fulano.com.br</td>
-                        <td><a href="csrf_vitima_del.php?id=<?= $i ?>">X</a></td>
+                        <td><?php $i ?></td>
+                        <td>Fulano<?php $i ?></td>
+                        <td>fulano<?php $i ?>@fulano.com.br</td>
+                        <td><a href="csrf_vitima_del.php?id=<?php $i ?>">X</a></td>
                     </tr>
 
             <?php
